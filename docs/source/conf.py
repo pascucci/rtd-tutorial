@@ -17,6 +17,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'nbsphinx',
+    'sphinx.ext.mathjax',
 ]
 
 intersphinx_mapping = {
@@ -24,6 +26,7 @@ intersphinx_mapping = {
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
 intersphinx_disabled_domains = ['std']
+exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
 templates_path = ['_templates']
 
